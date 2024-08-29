@@ -65,3 +65,103 @@ body,
 .nav li:hover i {
   background: #6c45ec;
 }
+
+ .file-selection {
+  height: 50vh;
+  text-align: center;
+  padding-top: 22%;
+  font-family: "Roboto Slab", serif;
+  font-size: 28px;
+} 
+
+ ul, ol, li{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+ }
+ 
+ .custom-file{
+     text-align: center;
+ }
+ 
+ .custom-file .txtMsg{
+     font-size: 14px;
+     font-weight: 500;
+     text-align: center;
+     color: #8bc34a;
+     margin: 8px 0px 0px;
+ }
+ 
+ .custom-file #selectFile{
+     display: none;
+ }
+ .custom-file .selectFile{
+     display: inline-flex;
+     align-items: center;
+     font-size: 20px;
+     font-weight: 600;
+     color: #fff;
+     background: #6c45ec;
+     padding: 16px 50px 16px;
+     border-radius: 100px;
+     cursor: pointer;
+     text-transform: uppercase;
+    
+ }
+ .custom-file .selectFile .icon{
+     display: inline-block;
+     width: 22px;
+     height: 22px;
+     background: #fff;
+     margin-right: 5px;
+     border-radius: 100%;
+     position: relative;
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ .custom-file .selectFile:hover .icon{
+     transform: rotate(180deg);
+ }
+ 
+ .custom-file .selectFile .icon::after,
+ .custom-file .selectFile .icon::before{
+     content: "";
+     position: absolute;
+     top: 1px;
+     right: 1px;
+     left: 1px;
+     bottom: 1px;
+     margin: auto;
+     background: #6c45ec;
+ }
+ .custom-file .selectFile .icon::after{
+     width: calc(100% - 8px);
+     height: 2px;
+ }
+ .custom-file .selectFile .icon::before{
+     height: calc(100% - 8px);
+     width: 2px;
+ }
+ .clr-red{
+     display: inline-block;
+     color: red;
+ }
+ 
+ .custom-file ul.file-list{
+     margin-top: 10px;
+     max-width: 60%;
+     padding: 8px;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 8px;
+     background: rgba(255, 255, 255, .9);
+ }
+ 
+ .custom-file ul.file-list li{
+     font-size: 14px;
+     font-weight: 500;
+     padding: 5px;
+     display: flex;
+     justify-content: space-between;
+ }
+
